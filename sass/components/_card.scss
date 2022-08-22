@@ -1,0 +1,99 @@
+.card-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 40px 120px;
+}
+
+.card-item {
+    border: 1px solid $color-green-light;
+    padding: 10px;
+
+    .card-img {
+        text-align: center;
+    }
+
+    .card-content {
+        margin: 10px;
+        padding: 0 15px;
+        padding-bottom: 10px;
+
+        .wrap-card-btn {
+            width: fit-content;
+            padding: 0px 20px;
+            transform: translate(32.5px, -15px);
+            background-color: $color-white-secondary;
+
+            .card-btn {
+                color: $color-white-secondary;
+                text-decoration: none;
+                padding: 8px 40px;
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 17px;
+            }
+
+            .card-btn-primary {
+                background-color: $color-yellow-light;
+            }
+
+            .card-btn-secondary {
+                background-color: $color-green-dark;
+            }
+        }
+
+        h3 {
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 20px;
+            color: $color-black;
+            margin-top: 5px;
+        }
+
+        .content-left, .content-right {
+            margin-top: 15px;
+            p {
+                margin-bottom: 5px;
+            }
+
+            .p1 {
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 17px;
+            }
+
+            .p2 {
+                font-weight: 500;
+                font-size: 12px;
+                line-height: 15px;
+                color: $color-grey-tertiary;
+            }
+        }
+
+        .content-left {
+            float: left;
+        }
+
+        .content-right {
+            float: right;
+            .p1 {
+                margin-left: 29px;
+            }
+
+            .p1_1 {
+                margin-left: 0px;
+            }
+
+            .p2_1 {
+                margin-left: 41px;
+            }
+        }
+    }
+
+    .card-content-primary {
+        border: 1px solid $color-yellow-light;
+    }
+
+    .card-content-secondary {
+        border: 1px solid $color-green-dark;
+    }
+}

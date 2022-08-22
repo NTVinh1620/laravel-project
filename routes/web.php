@@ -15,7 +15,7 @@ use App\Http\Controllers\FileController;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('index');
 });
 
 Route::get('/file', [FileController::class, 'index'])->name('file');

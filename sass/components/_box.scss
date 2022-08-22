@@ -1,0 +1,26 @@
+.box-container {
+    display: grid;
+    background-size: cover;
+    background-position: center;
+    grid-template-columns: auto auto auto auto auto auto;
+    gap: 40px;
+    text-align: center;
+    padding: 25px 70px;
+    margin-left: -41px;
+
+    .box-item {
+        cursor: pointer;
+        transition: all .16s;
+
+        .box-title {
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 22px;
+            color: $color-white-secondary;
+            margin-top: 9px;
+        }
+    }
+    .box-item:hover {
+        transform: scale(1.2);
+    }
+}
